@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id="bodyid">
     <!-- header-section  -->
     <section class="header flex justify-between items-center">
         <div class="header-left flex items-center">
@@ -27,7 +27,7 @@
                 <img src="img/checkbox.png" alt="">
                 <h1 class="text-2xl font-bold">23</h1>
             </div>
-            <div class="theme">
+            <div id="theme" class="theme cursor-pointer">
                 <img src="img/theme-btn.png" alt="">
             </div>
         </div>
@@ -42,7 +42,7 @@
                     <div class="p-[18px] bg-white rounded-[50%]"><img src="img/checkbox.png" alt=""></div>
                     <div>
                         <p class="font-semibold text-[#00303C]">Task Assigned</p>
-                        <h1 class="font-bold text-3xl">05</h1>
+                        <h1 class="font-bold text-3xl">6</h1>
 
                     </div>
                 </div>
@@ -53,8 +53,9 @@
                 <div class="date flex gap-4 items-center">
                     <div class="p-[18px] bg-white rounded-[50%]"><img src="img/calender.png" alt=""></div>
                     <div class="dates">
-                        <p class="text-xl">Wed ,</p>
-                        <p class="font-bold text-xl">Jul 28 2025</p>
+                        <p class="text-xl"><span id="the-day" class="text-xl">Wed</span>,</p>
+                        <p class="font-bold text-xl"><span id="the-month">Jul</span> <span id="the-date">28</span> <span
+                                id="the-year">2025</span></p>
 
                     </div>
                 </div>
@@ -64,7 +65,8 @@
                 <div class="box" id="box-1">
                     <div class="title">ShopEase</div>
                     <h1 class="text-2xl font-medium my-4">Fix Mobile Button Issue </h1>
-                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for overlappi...</p>
+                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for
+                        overlappi...</p>
                     <div class="banner-board-footer flex justify-between pt-[14px]">
                         <div>
                             <p class="opacity-70 text-sm">Deadline</p>
@@ -76,12 +78,13 @@
                 </div>
 
 
-                
+
 
                 <div class="box" id="box-2">
                     <div class="title">CloudSync</div>
                     <h1 class="text-2xl font-medium my-4">Add Dark Mode</h1>
-                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Store the user's preference in localStorage, update CSS vari...</p>
+                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Store the user's preference in localStorage,
+                        update CSS vari...</p>
                     <div class="banner-board-footer flex justify-between pt-[14px]">
                         <div>
                             <p class="opacity-70 text-sm">Deadline</p>
@@ -97,7 +100,8 @@
                 <div class="box" id="box-3">
                     <div class="title">SwiftPay</div>
                     <h1 class="text-2xl font-medium my-4">Optimize Home Page </h1>
-                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for overlappi...</p>
+                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for
+                        overlappi...</p>
                     <div class="banner-board-footer flex justify-between pt-[14px]">
                         <div>
                             <p class="opacity-70 text-sm">Deadline</p>
@@ -113,7 +117,8 @@
                 <div class="box" id="box-4">
                     <div class="title">Meta</div>
                     <h1 class="text-2xl font-medium my-4">Add new emoji🤲</h1>
-                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for overlappi...</p>
+                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for
+                        overlappi...</p>
                     <div class="banner-board-footer flex justify-between pt-[14px]">
                         <div>
                             <p class="opacity-70 text-sm">Deadline</p>
@@ -129,7 +134,8 @@
                 <div class="box" id="box-5">
                     <div class="title">Google LLC</div>
                     <h1 class="text-2xl font-medium my-4">Integrate OpenAI API</h1>
-                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for overlappi...</p>
+                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for
+                        overlappi...</p>
                     <div class="banner-board-footer flex justify-between pt-[14px]">
                         <div>
                             <p class="opacity-70 text-sm">Deadline</p>
@@ -145,7 +151,8 @@
                 <div class="box" id="box-6">
                     <div class="title">Glassdoar</div>
                     <h1 class="text-2xl font-medium my-4">Improve Job searching</h1>
-                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for overlappi...</p>
+                    <p class="p-4 bg-white rounded-lg opacity-50 mb-[14px]">Debug using Chrome Devtools, check for
+                        overlappi...</p>
                     <div class="banner-board-footer flex justify-between pt-[14px]">
                         <div>
                             <p class="opacity-70 text-sm">Deadline</p>
@@ -160,8 +167,8 @@
 
             </div>
         </section>
-        
-        
+
+
         <section class="banner-right">
             <div class="logs text-center">
                 <div class="activity-log flex justify-center gap-4 items-center">
