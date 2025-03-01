@@ -108,3 +108,9 @@ section {
     border-bottom: 3px dashed rgba(0, 0, 0, 0.1);
     
 }
+/* js classList  */
+.disabled{
+    background: #dfe0e9 !important;
+    opacity: 50%;
+    color: #c3c5cd !important;
+}

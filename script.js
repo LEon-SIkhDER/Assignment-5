@@ -30,3 +30,22 @@ document.getElementById("the-date").innerText = date
 const year = today.getFullYear()
 document.getElementById("the-year").innerText = year
 
+// button alert main js 
+document.getElementById("banner-board").addEventListener("click", function(event){
+    if(event.target.classList.contains("btn")){
+        alert("Board updated successfully")
+        event.target.classList.add("disabled")
+        // task number add 
+        const task = Number(document.getElementById("task-assigned").innerText)
+        const newTask = document.getElementById("task-assigned").innerText = task - 1
+        // check number minus 
+        const checkNumber = Number(document.getElementById("check-number").innerText)
+        const newCheckNumber = document.getElementById("check-number").innerText = checkNumber + 1
+
+
+        if(newTask === 0){
+            alert("Congrates!!! You have completed all the current task.")
+
+        }
+    }
+})
