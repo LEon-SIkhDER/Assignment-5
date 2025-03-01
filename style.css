@@ -1,0 +1,110 @@
+/* default css  */
+
+body {
+    background: #F4F7FF;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    background: white;
+    width: 1536px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+/* header-seciton  */
+/* header left  */
+.header .header-left h1 {
+    font-weight: 300;
+}
+
+.header .header-left h1 span {
+    font-weight: 600;
+}
+
+.header-right .complete {
+    background: #F4F7FF;
+    padding: 15px 20px;
+    border-radius: 40px;
+}
+
+.header-right .theme {
+    background: #F4F7FF;
+    border-radius: 50%;
+    padding: 15px;
+}
+/* banner section  */
+.banner-right{
+    height: 885.23px;
+}
+.banner .banner-left{
+    width: 75%;
+}
+.banner .banner-right{
+    width: 25%;
+}
+/* banner header  */
+.banner-header{
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 3px dashed rgba(0, 0, 0, 0.1);
+    padding-bottom: 32px;
+
+}
+.assigned, .discover, .date{
+    background: #ff000094;
+}
+.assigned{
+    background: #F4F7FF;
+
+
+}
+
+.discover{
+    background: linear-gradient(to right, #3752FD, #9BA8F8);
+    padding: 23px 40px;
+    grid-column: span 2;
+    border-radius: 12px;
+}
+.date{
+    background: #F4F7FF;
+    padding: 30px 23px;
+    border-radius: 12px;
+}
+/* banner board  */
+.banner-board{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    padding-top: 32px;
+}
+
+/* boxes  */
+.box{
+    padding: 24px;
+    background: #F4F7FF;
+    border-radius: 16px;
+    
+}
+.banner-board .title{
+    background: white;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.banner-board-footer{
+    border-top: 2px dashed rgba(0, 0, 0, 0.1);
+}
+.banner-board button, .banner-right button, .header-right button{
+    font-size: 16px;
+    font-weight: 500;
+    background: #3752FD;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.logs{
+    padding-bottom: 14px;
+    border-bottom: 3px dashed rgba(0, 0, 0, 0.1);
+    
+}

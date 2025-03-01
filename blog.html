@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+
+</head>
+
+<body>
+    <!-- header-section  -->
+    <section class="header flex justify-between items-center">
+        <div class="header-left flex items-center">
+            <img class="mr-2" src="img/logo.png" alt="">
+            <h1 class="text-3xl">Dev<span>Board</span> </h1>
+        </div>
+        <div class="header-right flex gap-10">
+            <button>Back to Desk</button>
+        </div>
+    </section>
+    <!-- blogs-section  -->
+    <h1 class="text-center py-3 font-bold text-xl">Blogs</h1>
+    <div class="blogs m-auto w-[1536px]">
+        <ul>
+            <li>
+                <h1 class="question font-bold text-lg pb-4">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p class="ans pt-4">There are 5 ways to select element in DOM. 1.getElementById()2.getElementsByClassName() 3.getElementsByTagName() 4.querySlector() 5.querySelectorAll().</p>
+            </li>
+
+
+            <li>
+                <h1 class="question font-bold text-lg pb-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h1>
+                <p class="ans pt-4">innerHTML can bring html tag with the text but innerText gets you the text inside the html tag but it can not get you the hidden text and textContent can give u the text inside the html tag with hidden text.</p>
+            </li>
+
+
+            <li>
+                <h1 class="question font-bold text-lg pb-4">Question-3: What is event delegation in the DOM?
+                </h1>
+                <p class="ans pt-4">Event dlegation is a technique to write js. its help us to control child by bubbling technique. we add addEventListener to the parent not in the child.</p>
+            </li>
+
+
+
+
+            <li>
+                <h1 class="question font-bold text-lg pb-4">Question-4: What is event bubbling in the DOM?
+
+
+                </h1>
+                <p class="ans pt-4">Event bubbling is a way to reach parent or grand-parennt or the main root "document" through child.</p>
+            </li>
+
+
+
+            <li>
+                <h1 class="question font-bold text-lg pb-4">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+                <p class="ans pt-4">To create an element using js we use createElement(). It can create any kind of element using js. To add an element we use appendChild(). It help use to put your new element inside a parent. and to remove an element we use removeChild(). It help us to remove any kind of element.</p>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
