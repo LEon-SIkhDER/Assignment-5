@@ -35,6 +35,7 @@ document.getElementById("banner-board").addEventListener("click", function (even
     if (event.target.classList.contains("btn")) {
         alert("Board updated successfully")
         event.target.classList.add("disabled")
+        event.target.disabled = true
         // task number add 
         const task = Number(document.getElementById("task-assigned").innerText)
         const newTask = document.getElementById("task-assigned").innerText = task - 1
