@@ -9,7 +9,6 @@ document.getElementById("theme").addEventListener("click", function () {
     const r = Math.floor(Math.random() * 256)
     const g = Math.floor(Math.random() * 256)
     const b = Math.floor(Math.random() * 256)
-    console.log(r, g, b)
     document.getElementById("bodyid").style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 
 })
@@ -53,10 +52,8 @@ document.getElementById("banner-board").addEventListener("click", function (even
         const histories = document.getElementById("histories").appendChild(historiesP)
         // variables 
         const time = new Date().toLocaleTimeString()
-        console.log(time)
         const box = event.target.closest(".box");
         const taskName = box.querySelector("h1").innerText
-        console.log(taskName)
 
         historiesP.innerText = `You have Complete The Task ${taskName} at ${time}. Good Luck For Your Future Task!`
     }
