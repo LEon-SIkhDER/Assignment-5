@@ -57,7 +57,7 @@ document.getElementById("banner-board").addEventListener("click", function (even
         const taskName = box.querySelector("h1").innerText
         console.log(taskName)
 
-        historiesP.innerText = `You have Complete The Task ${taskName} at ${time}. Good Luck For Future Task!`
+        historiesP.innerText = `You have Complete The Task ${taskName} at ${time}. Good Luck For Your Future Task!`
     }
 })
 // clear history 
