@@ -24,15 +24,15 @@ const allMonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
 const month = today.getMonth()
 document.getElementById("the-month").innerText = allMonth[month]
 // theDate 
-const date =  today.getDate()
+const date = today.getDate()
 document.getElementById("the-date").innerText = date
 // theYear 
 const year = today.getFullYear()
 document.getElementById("the-year").innerText = year
 
 // button alert main js 
-document.getElementById("banner-board").addEventListener("click", function(event){
-    if(event.target.classList.contains("btn")){
+document.getElementById("banner-board").addEventListener("click", function (event) {
+    if (event.target.classList.contains("btn")) {
         alert("Board updated successfully")
         event.target.classList.add("disabled")
         // task number add 
@@ -43,9 +43,26 @@ document.getElementById("banner-board").addEventListener("click", function(event
         const newCheckNumber = document.getElementById("check-number").innerText = checkNumber + 1
 
 
-        if(newTask === 0){
+        if (newTask === 0) {
             alert("Congrates!!! You have completed all the current task.")
 
         }
+        // histories js
+        const historiesP = document.createElement("p")
+        const histories = document.getElementById("histories").appendChild(historiesP)
+        // variables 
+        const time = new Date().toLocaleTimeString()
+        console.log(time)
+        const box = event.target.closest(".box");
+        const taskName = box.querySelector("h1").innerText
+        console.log(taskName)
+
+        historiesP.innerText = `You have Complete The Task ${taskName} at ${time}. Good Luck For Future Task!`
     }
+})
+// clear history 
+document.getElementById("clear-history").addEventListener("click", function(event){
+    document.getElementById("histories").innerHTML = ""
+    
+
 })

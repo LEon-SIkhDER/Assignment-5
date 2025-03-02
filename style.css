@@ -114,3 +114,10 @@ section {
     opacity: 50%;
     color: #c3c5cd !important;
 }
+/* histories  */
+.histories p{
+    background: #F4F7FF;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
